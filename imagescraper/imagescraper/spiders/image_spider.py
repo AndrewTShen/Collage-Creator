@@ -43,7 +43,6 @@ class QuotesSpider(scrapy.Spider):
 
         for url in self.urls:
             yield scrapy.Request(url, callback=self.parse)
-
         # print "NIMAGES: ", self.nImages, '\n\n'
         # print "Counter: ", self.counter, '\n\n'
 
