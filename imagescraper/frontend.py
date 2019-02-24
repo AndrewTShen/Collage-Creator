@@ -61,6 +61,7 @@ class MyApp(App):
             print key
 
         subprocess.call(["python", "process_images.py", combineKeywords(self.keywords)])
+        subprocess.call(["python", "mosaic.py", "image.jpg", "images/"])
 
 
 # run app

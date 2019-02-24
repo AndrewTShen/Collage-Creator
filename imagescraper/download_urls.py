@@ -23,6 +23,6 @@ def downloadImages(readFile, writeDir):
 
 	for fileNum, url in enumerate(content):
 		print 'downloading: file ' + str(fileNum) 
-		download(url, writeDir + 'file' + str(fileNum) + '.jpeg')
+		download(url, writeDir + 'file' + str(fileNum) + '.jpg')
 
 # downloadImages("image_urls.txt", 'images/')
