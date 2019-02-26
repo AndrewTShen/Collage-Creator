@@ -6,4 +6,6 @@ Collage Creator is an app that help you create a mosaic with images of your favo
 Collage Creator works by allowing the user to input select keywords to query Pexel.com, a website for free stockphotos. The photos are then made into a mosaic that resembles a select input image.
 
 ## Instructions
-todo
+1. Download the repository using through `git clone git@github.com:AndrewTShen/Collage-Creator.git` or by downloading the repository as a zip file.
+
+2. todo
