@@ -1,5 +1,4 @@
 # Keyword Collage Creator
-
 Collage Creator is an app that help you create a mosaic with images of your favorite things whether it be animals, hobbies, activities, anything that can be described in a picture! It is perfect for making a specialized gift for a loved one or can be used to make a powerful message using double meaning and juxtaposition. This project was built for Blueprint 2019.
 
 ## How It Works
@@ -20,14 +19,11 @@ Collage Creator works by allowing the user to input select keywords to query Pex
 3. Run the frontend app using `python frontend.py`. This should prompt a kivy app to open. Through this app, insert each keyword to be scraped into the box and click `Ok` after each keyword. Once satisfied with the keywords chosen, click `Submit` to create the mosaic.
 
 ## Samples
-
 <img src="https://github.com/AndrewTShen/Keyword-Collage-Creator/blob/master/imagescraper/sample_original.jpg" alt="sample_original" width="500"/>
 <img src="https://github.com/AndrewTShen/Keyword-Collage-Creator/blob/master/imagescraper/sample_mosaic.jpeg" alt="sample_mosaic" width="500"/>
 
-
-
 ## Acknowledgements
 - Srinivasan Sathiamurthy for inspiring and helping to build this project.  
-- Rob Dawson for writing `mosaic.py`, the main driver of the mosaic portion of the project. You can find the code for `mosiac.py` at this [respository](https://github.com/codebox/mosaic)
+- Rob Dawson for writing `mosaic.py`, the main driver of the mosaic portion of the project. You can find the code for `mosiac.py` at this [respository](https://github.com/codebox/mosaic).
 - Blueprint Mentors for helping to debug bits and pieces of code.  
 
