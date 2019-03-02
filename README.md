@@ -19,6 +19,13 @@ Collage Creator works by allowing the user to input select keywords to query Pex
 
 3. Run the frontend app using `python frontend.py`. This should prompt a kivy app to open. Through this app, insert each keyword to be scraped into the box and click `Ok` after each keyword. Once satisfied with the keywords chosen, click `Submit` to create the mosaic.
 
+## Samples
+
+<img src="https://github.com/AndrewTShen/Keyword-Collage-Creator/blob/master/imagescraper/sample_original.jpg" alt="sample_original" width="500"/>
+<img src="https://github.com/AndrewTShen/Keyword-Collage-Creator/blob/master/imagescraper/sample_mosaic.jpeg" alt="sample_mosaic" width="500"/>
+
+
+
 ## Acknowledgements
 - Srinivasan Sathiamurthy for inspiring and helping to build this project.  
 - Rob Dawson for writing `mosaic.py`, the main driver of the mosaic portion of the project.  
