@@ -28,6 +28,6 @@ Collage Creator works by allowing the user to input select keywords to query Pex
 
 ## Acknowledgements
 - Srinivasan Sathiamurthy for inspiring and helping to build this project.  
-- Rob Dawson for writing `mosaic.py`, the main driver of the mosaic portion of the project.  
+- Rob Dawson for writing `mosaic.py`, the main driver of the mosaic portion of the project. You can find the code for `mosiac.py` at this [respository](https://github.com/codebox/mosaic)
 - Blueprint Mentors for helping to debug bits and pieces of code.  
 
