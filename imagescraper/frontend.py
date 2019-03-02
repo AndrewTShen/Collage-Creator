@@ -21,20 +21,22 @@ def combineKeywords(keywords):
 
 class MyApp(App):
 # layout
+    title = 'Custom Collage Creator'
 
     def build(self):
         self.keywords = []
         layout = BoxLayout(padding=10, orientation='vertical')
-        btn1 = Button(text="OK")
-        btn1.bind(on_press=self.buttonClicked)
-        layout.add_widget(btn1)
 
         self.lbl1 = Label(text="These are your keywords: ")
         layout.add_widget(self.lbl1)
 
-        self.txt1 = TextInput(text='Enter your command here', multiline=False)
+        self.txt1 = TextInput(text='Enter your keywords here', multiline=False)
         self.txt1.bind(on_text_validate=self.on_enter)
         layout.add_widget(self.txt1)
+
+        btn1 = Button(text="OK")
+        btn1.bind(on_press=self.buttonClicked)
+        layout.add_widget(btn1)
 
         btn2 = Button(text="Submit")
         btn2.bind(on_press=self.submitKeywords)
@@ -48,6 +50,7 @@ class MyApp(App):
         self.lbl1.text = "These are your keywords: " + combineKeywords(self.keywords)
 
     def on_enter(instance, value):
+        # self.keywords.append(instance.txt1.text)
         print('User pressed enter in', instance)
         value = ""
         print instance.txt1.text
@@ -55,13 +58,10 @@ class MyApp(App):
         # process_images(['ball', 'swim'])
 
     def submitKeywords(self, btn):
-        
-        # print "hi"
-        for key in self.keywords:
-            print key
-
         subprocess.call(["python", "process_images.py", combineKeywords(self.keywords)])
         subprocess.call(["python", "mosaic.py", "image.jpg", "images/"])
+        subprocess.call(["open", "mosaic.jpeg"])
+        self.keywords = []
 
 
 # run app
